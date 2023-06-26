@@ -45,6 +45,15 @@
   <put name="pageName" value="heatMap"/>
 </definition>
 
+<!-- Gene Family Widget -->
+<definition name="geneFamilyWidget.tile" path="/model/geneFamilyWidget.jsp"
+            controllerUrl="/initGeneFamilyWidget.do"/>
+
+<definition name="geneFamilyWidget.page" extends="layout.template">
+  <put name="body" value="geneFamilyWidget.tile"/>
+  <put name="pageName" value="geneFamilyWidget"/>
+</definition>
+
 <!-- Linkage Group Diagram -->
 <definition name="linkageGroupDiagram.tile" path="/model/linkageGroupDiagram.jsp"
             controllerUrl="/initLinkageGroupDiagram.do"/>
